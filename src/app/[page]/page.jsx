@@ -1,13 +1,14 @@
 import { notFound } from "next/navigation";
 
-import { ProductListSkeletons } from "@/components/skeletons/productListSkeletons";
 import { getSeo } from "@/services/getSeo";
+
+import { ProductList } from "@/components/features/productList";
 
 export default function Page({ params }) {
   return (
     <>
       <h1>{params.page}</h1>
-      <ProductListSkeletons />
+      <ProductList />
     </>
   );
 }
