@@ -7,7 +7,7 @@ export default function Layout({ children }) {
       <main className="mx-auto flex max-w-screen-2xl gap-10 py-20">
         <Filters />
 
-        <section className="flex-1">{children}</section>
+        <section className="flex flex-1 flex-col gap-10">{children}</section>
       </main>
 
       <Footer />

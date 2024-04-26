@@ -1,25 +1,28 @@
+import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
+
 export async function Filters() {
   return (
     <>
-      <nav className="flex w-80 flex-col gap-2">
-        <ul>
-          <li>
-            <label>
-              <input type="checkbox" name="brand" />
+      <nav>
+        <ul className="flex w-80 flex-col gap-2">
+          <li className="flex items-center">
+            <Label className="inline-flex cursor-pointer items-center space-x-2">
+              <Checkbox value="apple" />
               <span>Apple</span>
-            </label>
+            </Label>
           </li>
-          <li>
-            <label>
-              <input type="checkbox" name="brand" />
+          <li className="flex items-center">
+            <Label className="inline-flex cursor-pointer items-center space-x-2">
+              <Checkbox value="samsung" />
               <span>Samsung</span>
-            </label>
+            </Label>
           </li>
-          <li>
-            <label>
-              <input type="checkbox" name="brand" />
-              <span>Google</span>
-            </label>
+          <li className="flex items-center">
+            <Label className="inline-flex cursor-pointer items-center space-x-2">
+              <Checkbox value="xiaomi" />
+              <span>Xiaomi</span>
+            </Label>
           </li>
         </ul>
       </nav>
